@@ -1,5 +1,5 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -7,186 +7,217 @@ body {
 }
 
 .tileBlock {
-	margin: -8px;
+    margin: -8px;
 }
 
 #profile_image {
-	z-index: 3;
-	background: white;
-	position: absolute;
-	width: 250px;
-	height: 250px;
-	padding: 5px;
-	margin: 60px;
+    z-index: 3;
+    background: white;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    margin: 60px;
 }
 
 p.Name {
-font-family: Century Gothic;
-font-size: 48pt;
-position: absolute;
-padding: 85px 0px 35px 350px;
-margin-top: 0px;
-text-align: left;
-color: white;
-background: rgba(0, 0, 0, 0.4);
-z-index: 2;
-width: 1553px;
+    font-family: Century Gothic;
+    font-size: 48pt;
+    position: absolute;
+    padding: 85px 0px 35px 350px;
+    margin-top: 0px;
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    width: 1553px;
 }
 
-#slider { /*положение слайдера*/
-	z-index: 1;
-	text-align: center;
+#slider {
+    /*положение слайдера*/
+    z-index: 1;
+    text-align: center;
 }
 
-#slides article{ /*все изображения справа друг от доруга*/
-	width: 20%;
-	float: left;
+#slides article {
+    /*все изображения справа друг от доруга*/
+    width: 20%;
+    float: left;
 }
 
-#slides .top-image{ /*устанавливает общий размер блока с изображениями*/
-	width: 500%;
-	line-height: 0;
+#slides .top-image {
+    /*устанавливает общий размер блока с изображениями*/
+    width: 500%;
+    line-height: 0;
 }
 
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
-	width: 100%;
-	overflow: hidden;
+#overflow {
+    /*сркывает все, что находится за пределами этого блока*/
+    width: 100%;
+    overflow: hidden;
 }
 
-article img{ /*размер изображений слайдера*/
-	width: 100%;
+article img {
+    /*размер изображений слайдера*/
+    width: 1920;
 }
 
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	width: 100%; /*максимальнная длинна*/
+#desktop:checked~#slider {
+    /*размер всего слайдера*/
+    width: 100%;
+    /*максимальнная длинна*/
 }
 
-.tileBlock input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
-	display: none;
+.tileBlock input {
+    /*скрывает стандартные инпуты (чекбоксы) на странице*/
+    display: none;
 }
 
 /*позиция изображения при активации переключателя*/
-#switch1:checked ~ #slides .top-image{
-	margin-left: 0;
+
+#switch1:checked~#slides .top-image {
+    margin-left: 0;
 }
 
-#switch2:checked ~ #slides .top-image{
-	margin-left: -100%;
+#switch2:checked~#slides .top-image {
+    margin-left: -100%;
 }
 
-#switch3:checked ~ #slides .top-image{
-	margin-left: -200%;
+#switch3:checked~#slides .top-image {
+    margin-left: -200%;
 }
 
-#controls{ /*положение блока всех управляющих элементов*/
-	margin: -3% 0 0 0;
-	width: 100%;
+#controls {
+    /*положение блока всех управляющих элементов*/
+    margin: -3% 0 0 0;
+    width: 100%;
 }
 
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
-	width: 15px;
-	height: 15px;
-	background: #bbb;
+#active label {
+    /*стиль отдельного переключателя*/
+    border-radius: 10px;
+    /*скругление углов*/
+    display: inline-block;
+    /*расположение в строку*/
+    width: 15px;
+    height: 15px;
+    background: #bbb;
 }
 
-#active{ /*расположение блока с переключателями*/
-	margin: 0 0 0;
-	text-align: center;
+#active {
+    /*расположение блока с переключателями*/
+    margin: 0 0 0;
+    text-align: center;
 }
 
-#active label:hover{ /*поведение чекбокса при наведении*/
-	background: #ffea76;
-	border-color: #777 !important; /*выполнение в любом случае*/
+#active label:hover {
+    /*поведение чекбокса при наведении*/
+    background: #ffea76;
+    border-color: #777 !important;
+    /*выполнение в любом случае*/
 }
 
 /*цвет активного лейбла при активации чекбокса*/
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3)
-{
-	background: #ffd700;
-	border-color: #ffd700 !important;
+
+#switch1:checked~#active label:nth-child(1), #switch2:checked~#active label:nth-child(2), #switch3:checked~#active label:nth-child(3) {
+    background: #ffd700;
+    border-color: #ffd700 !important;
 }
 
-#slides .top-image{ /*анимация пролистывания изображений*/
-	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+#slides .top-image {
+    /*анимация пролистывания изображений*/
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
 a {
-    color: white; /* Цвет обычной ссылки */ 
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-   }
+    color: white;
+    /* Цвет обычной ссылки */
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+}
+
 a:visited {
-color: white; /* Цвет посещённой ссылки */
-} 
+    color: white;
+    /* Цвет посещённой ссылки */
+}
+
 a:hover {
-color: rgb(224, 224, 224); /* Цвет ссылки при наведении на нее курсора мыши */  
-text-decoration: underline; /* Добавляем подчеркивание */
+    color: rgb(224, 224, 224);
+    /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: underline;
+    /* Добавляем подчеркивание */
 }
 
 ul.menu {
-	margin: 100px 0 75px 0;
-	text-align: center;
-	font-family: Century Gothic;
-	font-size: 24pt;
-	color: white;
+    margin: 150px 0 150px 0;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 24pt;
+    color: white;
 }
 
-ul.menu li{
-	position: relative;
-	display: inline;
-	margin: 0 -5px 0 -5px;
-	padding: 0 60px 0 50px;
-	border-left: 1px solid #ffd700;
-}
-#R {
-	padding-right: 50px;
-	border-right: 1px solid #ffd700;
+ul.menu li {
+    position: relative;
+    display: inline;
+    padding: 0 60px 0 60px;
 }
 
 h1 {
-	color: #ffea76;
-	font-size: 30pt;
-	margin: 10px 0px 25px 50px;
-	font-family: Century Gothic;
+    color: #ffea76;
+    font-size: 30pt;
+    margin: 10px 0px 25px 50px;
+    font-family: Century Gothic;
 }
 
-.info-block{
-	width: 1000px;
-	margin-top: 50px;
-	padding: 15px 15px 15px 20px;
-	margin-left: 150px;
-	background-color: rgb(36, 36, 36);
-	box-shadow: 0 0 10px black;
+.info-block {
+    width: 1000px;
+    margin-top: 50px;
+    padding: 15px 15px 15px 20px;
+    margin-left: 150px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0 0 10px black;
 }
 
 h1 a {
-	color: #ffea76;
+    color: #ffea76;
 }
 
 h1 a:hover {
-    color:#ffea76; /* Цвет ссылки при наведении на нее курсора мыши */  
-	text-decoration: none;
+    color: #ffea76;
+    /* Цвет ссылки при наведении на нее курсора мыши */
+    text-decoration: none;
 }
 
 .information {
-	color: white;
-	font-size: 24px;
-	font-family: Century Gothic;
+    color: white;
+    font-size: 24px;
+    font-family: Century Gothic;
 }
 
 @font-face {
-	font-family: "Century Gothic";  
-	src: url("../Fonts/Century Gothic.ttf") format("truetype"); 
-	font-style: normal; 
-	font-weight: normal;
+    font-family: "Century Gothic";
+    src: url("../Fonts/Century Gothic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
-ul.gallery-image li{
-	position: relative;
-	display: inline;
-	margin-right: 50px;
-	background-color: white;
+ul.gallery-image li {
+    position: relative;
+    display: inline;
+    margin-right: 32px;
+}
+
+#arrow {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: none;
+}
+
+#void {
+    padding-top: 500px;
+}
+
+#empty {
+    color: rgba(0, 0, 0, 0);
 }
